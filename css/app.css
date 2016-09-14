@@ -1,0 +1,28 @@
+html,body,.container
+{
+    height:100%;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-link {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 0px;
+}
+
+
+.bold-font {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.normal-font {
+    font-size: 1.2em;
+    color: white;
+}
