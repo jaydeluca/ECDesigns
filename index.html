@@ -39,6 +39,7 @@
         flex: 1;
         font-weight: bold;
         font-size: 2.5em;
+        margin: 0;
 
     }
 
@@ -48,6 +49,7 @@
         justify-content: flex-end;
         flex-flow: column;
         letter-spacing: 4px;
+        margin: 0;
     }
 
     .top-right {
@@ -68,6 +70,9 @@
         color: white;
         margin-left: 15%;
         padding-bottom: 30px;
+        font-size: 1em;
+        flex-wrap: wrap;
+        overflow: scroll;
     }
 
     .imgshrink {
@@ -77,14 +82,16 @@
 
     @media screen and (max-width: 767px) {
         .container {
-            flex-direction: column;
+            display: block;
             margin-top: 0;
             padding-top: 0;
+            height: auto;
         }
 
-        .sides {
-            padding: auto;
+        .bio-bottom {
+            font-size: .8em;
         }
+
     }
 
 </style>
