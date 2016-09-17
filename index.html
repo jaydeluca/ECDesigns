@@ -1,5 +1,5 @@
 <!doctype html>
-<html ang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,6 +11,9 @@
 <body>
 
 <style>
+    body {
+        background: #a7cfe6;
+    }
 
     .container
     {
@@ -23,10 +26,9 @@
 
     .main {
         flex: 2;
-        background: #a7cfe6;
         height: 100%;
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        padding: auto;
     }
 
     .side {
@@ -40,22 +42,20 @@
 
     }
 
-    .top-right {
+    .sides {
         flex: 1;
         display: flex;
         justify-content: flex-end;
         flex-flow: column;
-        background: #21305d;
         letter-spacing: 4px;
     }
 
+    .top-right {
+        background: #21305d;
+    }
+
     .bottom-right {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        flex-flow: column;
         background: #e58283;
-        letter-spacing: 4px;
     }
 
     .bio {
@@ -73,6 +73,18 @@
     .imgshrink {
         width: 225px;
         height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            flex-direction: column;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .sides {
+            padding: auto;
+        }
     }
 
 </style>
@@ -99,10 +111,10 @@
         </div>
     </div>
     <div class="side">
-        <div class="top-right">
+        <div class="top-right sides">
             <a href="portfolio.html"><img src="img/a2.png" class="bottom-align-text imgshrink"></a>
         </div>
-        <div class="bottom-right" >
+        <div class="bottom-right sides">
             <a href="resume.html"><img src="img/a3.png" class="bottom-align-text imgshrink"></a>
         </div>
     </div>
