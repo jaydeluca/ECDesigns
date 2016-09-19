@@ -31,21 +31,19 @@
         margin-right: auto;
     }
 
-    a {
+    a:hover, a:visited, a:link, a:active
+    {
         color: white;
-    }
-
-    a:hover {
-        color: white;
-    }
-
-    a:visited {
-        color: white;
+        text-decoration: none;
     }
 
     .portfolio-item {
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .makebold {
+        font-weight: bold;
     }
 
 
@@ -65,7 +63,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12" style="text-align: center; margin-top: 20px;">
-            <p class="normal-font"><a href="" @click.prevent="showPrint">PRINT</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="" @click.prevent="showWeb">WEB</a>  &nbsp;&nbsp;|&nbsp;&nbsp; <a href="" @click.prevent="showLogos">LOGOS</a></p>
+            <p class="normal-font"><a href="" id="print" @click.prevent="showPrint" class="makebold">PRINT</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="" @click.prevent="showWeb" id="web">WEB</a>  &nbsp;&nbsp;|&nbsp;&nbsp; <a href="" id="logos" @click.prevent="showLogos">LOGOS</a></p>
         </div>
     </div>
     <div class="row">
@@ -125,16 +123,25 @@
                 this.print = false;
                 this.logos = false;
                 this.web = true;
+                $('#print').removeClass('makebold');
+                $('#logos').removeClass('makebold');
+                $('#web').addClass('makebold');
             },
             showPrint: function () {
                 this.print = true;
                 this.logos = false;
                 this.web = false;
+                $('#print').addClass('makebold');
+                $('#logos').removeClass('makebold');
+                $('#web').removeClass('makebold');
             },
             showLogos: function() {
                 this.print = false;
                 this.logos = true;
                 this.web = false;
+                $('#print').removeClass('makebold');
+                $('#logos').addClass('makebold');
+                $('#web').removeClass('makebold');
             }
 
         }
