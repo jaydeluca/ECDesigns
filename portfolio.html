@@ -75,7 +75,12 @@
     </div>
     <div class="row">
         <div class="col-sm-12" style="text-align: center; margin-top: 20px;">
-            <p class="normal-font"><a href="" id="print" @click.prevent="showPrint" class="makebold">PRINT</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="" @click.prevent="showWeb" id="web">WEB</a>  &nbsp;&nbsp;|&nbsp;&nbsp; <a href="" id="logos" @click.prevent="showLogos">LOGOS</a></p>
+            <p class="normal-font">
+                <a href="" id="print" @click.prevent="showPrint" class="makebold">PRINT</a>  &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="" id="branding" @click.prevent="showBranding">BRANDING</a>  &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="" @click.prevent="showAds" id="advertising">ADVERTISING</a>  &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="" @click.prevent="showWeb" id="web">WEB</a>
+            </p>
         </div>
     </div>
     <div class="row">
@@ -87,7 +92,7 @@
                 <img src="img/print-3-people.jpg" class="img-responsive portfolio-item">
                 <img src="img/print-4-gatehouse.jpg" class="img-responsive portfolio-item">
                 <img src="img/print-7-veridium-signs.jpg" class="img-responsive portfolio-item">
-                <img src="img/print-8-veridium-business-cards.jpg" class="img-responsive">
+                <img src="img/print-8-veridium-business-cards.jpg" class="img-responsive portfolio-item">
             </template>
             <template v-if="web">
                 <img src="img/web-1-veridium.jpg" class="img-responsive portfolio-item">
@@ -95,12 +100,19 @@
                 <img src="img/web-3-gladlydo.jpg" class="img-responsive portfolio-item">
                 <img src="img/web-4-nets.jpg" class="img-responsive">
             </template>
-            <template v-if="logos">
+            <template v-if="branding">
                 <img src="img/logo-1-veridium.jpg" class="img-responsive portfolio-item">
                 <img src="img/logo-2-barstool-sports.jpg" class="img-responsive portfolio-item">
                 <img src="img/logo-3-4-fingers.jpg" class="img-responsive portfolio-item">
                 <img src="img/logo-4-personal.jpg" class="img-responsive portfolio-item">
-                <img src="img/logo-5-id-ad.jpg" class="img-responsive">
+                <img src="img/logo-5-silverbirch.jpg" class="img-responsive portfolio-item">
+            </template>
+            <template v-if="ads">
+                <img src="img/ad-1-windex.jpg" class="img-responsive portfolio-item">
+                <img src="img/ad-2-trillium.jpg" class="img-responsive portfolio-item">
+                <img src="img/ad-3-trillium.jpg" class="img-responsive portfolio-item">
+                <img src="img/ad-4-circle.jpg" class="img-responsive portfolio-item">
+                <img src="img/ad-5-golfnow.jpg" class="img-responsive portfolio-item">
             </template>
 
         </div>
@@ -128,31 +140,48 @@
         data: {
             print: true,
             web: false,
-            logos: false
+            ads: false,
+            branding: false
         },
         methods: {
             showWeb: function () {
                 this.print = false;
-                this.logos = false;
+                this.branding = false;
                 this.web = true;
+                this.ads = false;
                 $('#print').removeClass('makebold');
-                $('#logos').removeClass('makebold');
+                $('#branding').removeClass('makebold');
                 $('#web').addClass('makebold');
+                $('#advertising').removeClass('makebold');
             },
             showPrint: function () {
                 this.print = true;
-                this.logos = false;
+                this.branding = false;
                 this.web = false;
+                this.ads = false;
                 $('#print').addClass('makebold');
-                $('#logos').removeClass('makebold');
+                $('#branding').removeClass('makebold');
                 $('#web').removeClass('makebold');
+                $('#advertising').removeClass('makebold');
             },
-            showLogos: function() {
+            showBranding: function() {
                 this.print = false;
-                this.logos = true;
+                this.branding = true;
+                this.web = false;
+                this.ads = false;
+                $('#print').removeClass('makebold');
+                $('#branding').addClass('makebold');
+                $('#web').removeClass('makebold');
+                $('#advertising').removeClass('makebold');
+            },
+            showAds: function() {
+                this.ads = true;
+                this.print = false;
+                this.branding = false;
                 this.web = false;
                 $('#print').removeClass('makebold');
-                $('#logos').addClass('makebold');
+                $('#advertising').addClass('makebold');
+                $('#branding').removeClass('makebold');
                 $('#web').removeClass('makebold');
             }
 
