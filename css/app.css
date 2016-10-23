@@ -6641,6 +6641,7 @@ html, body {
   flex-wrap: wrap; }
   @media screen and (max-width: 767px) {
     .home-page {
+      height: auto;
       flex-direction: column; }
       .home-page .bio-bottom {
         font-size: .8em; } }
@@ -6669,7 +6670,8 @@ html, body {
     justify-content: flex-end;
     flex-flow: column;
     letter-spacing: 4px;
-    margin: 0; }
+    margin: 0;
+    height: auto; }
   .home-page .top-right {
     background: #21305d; }
   .home-page .bottom-right {

@@ -7,6 +7,7 @@
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
+    height: auto;
     flex-direction: column;
     .bio-bottom {
       font-size: .8em;
@@ -46,6 +47,7 @@
     flex-flow: column;
     letter-spacing: 4px;
     margin: 0;
+    height: auto;
   }
 
   .top-right {
