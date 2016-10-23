@@ -1,145 +1,28 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84556527-1', 'auto');
+    ga('send', 'pageview');
 
-        ga('create', 'UA-84556527-1', 'auto');
-        ga('send', 'pageview');
+  </script>
 
-    </script>
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Silva</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Silva - Portfolio</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
-
-<style>
-    body {
-        background: #a7cfe6;
-    }
-
-    .container
-    {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .main {
-        flex: 2;
-        height: 100%;
-        margin: auto;
-        padding: auto;
-    }
-
-    .side {
-        display: flex;
-        align-content: flex-end;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        font-weight: bold;
-        font-size: 2.5em;
-        margin: 0;
-
-    }
-
-    .sides {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        flex-flow: column;
-        letter-spacing: 4px;
-        margin: 0;
-    }
-
-    .top-right {
-        background: #21305d;
-    }
-
-    .bottom-right {
-        background: #e58283;
-    }
-
-    .bio {
-        margin: 15%;
-    }
-
-
-    .bio-bottom {
-        font-family: 'Raleway medium', sans-serif;
-        color: white;
-        margin-left: 15%;
-        padding-bottom: 30px;
-        font-size: 1em;
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-
-    .imgshrink {
-        width: 225px;
-        height: auto;
-    }
-
-    @media screen and (max-width: 767px) {
-        .container {
-            display: block;
-            margin-top: 0;
-            padding-top: 0;
-            height: auto;
-        }
-
-        .bio-bottom {
-            font-size: .8em;
-        }
-
-    }
-
-</style>
-
-<div class="container">
-    <div class="main">
-        <div class="bio">
-            <img src="img/1_logo.png">
-            <div class="bold-font" style="margin-bottom: 10px;">
-                <img src="img/a1.png" style="width: 176px; height: 64px">
-            </div>
-            <div class="normal-font">
-                CREATIVE WHIZ<br />
-                10+ YEARS EXPERIENCE<br />
-                LOCAL TO BOSTON<br />
-                <br />
-                PEOPLE CALL ME THE MUSHROOM,<br />
-                BECAUSE I’M A “FUN GUY”.<br />
-            </div>
-        </div>
-        <div class="bio-bottom">
-            508.431.3920<br />
-            <a href="mailto:ECTHEDESIGNGUY@GMAIL.COM" style="text-decoration: none; color: white;">ECTHEDESIGNGUY@GMAIL.COM</a><br />
-        </div>
+  <body>
+    <div id="app" class="primary-container">
+      <transition name='fade'>
+        <router-view></router-view>
+      </transition>
     </div>
-    <div class="side">
-        <div class="top-right sides">
-            <a href="portfolio.html"><img src="img/a2.png" class="bottom-align-text imgshrink"></a>
-        </div>
-        <div class="bottom-right sides">
-            <a href="resume.html"><img src="img/a3.png" class="bottom-align-text imgshrink"></a>
-        </div>
-    </div>
-
-
-</div>
-
-</body>
+    <script src="/js/app.js"></script>
+  </body>
 </html>

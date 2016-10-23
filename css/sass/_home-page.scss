@@ -1,0 +1,82 @@
+
+.home-page {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    .bio-bottom {
+      font-size: .8em;
+    }
+
+  }
+
+  .main {
+    background: #a7cfe6;
+    flex: 2;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+
+  }
+
+  .side {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+
+  }
+
+  .sides {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    letter-spacing: 4px;
+    margin: 0;
+  }
+
+  .top-right {
+    background: #21305d;
+  }
+
+  .bottom-right {
+    background: #e58283;
+  }
+
+  .bio {
+    margin: 15%;
+
+    @media screen and (max-width: 767px) {
+      margin: 5%;
+    }
+  }
+
+  .bio-bottom {
+    font-family: 'Raleway medium', sans-serif;
+    color: white;
+    margin-left: 15%;
+    padding-bottom: 30px;
+    font-size: 1em;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+      margin: 5%;
+    }
+
+  }
+
+}
+
