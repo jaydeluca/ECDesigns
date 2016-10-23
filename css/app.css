@@ -6678,10 +6678,10 @@ html, body {
     height: auto; }
   .home-page .top-right {
     background: #21305d;
-    height: auto; }
+    min-height: 100px; }
   .home-page .bottom-right {
     background: #e58283;
-    height: auto; }
+    min-height: 100px; }
   .home-page .bio {
     margin: 15%; }
     @media screen and (max-width: 767px) {
