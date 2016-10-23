@@ -3,7 +3,7 @@
         <div class="portfolio col-lg-12">
             <div class="row">
                 <div class="col-sm-12">
-                    <router-link to="/"><img src="img/home.png" class="logo-link"></router-link>
+                    <router-link to="/"><img src="/img/home.png" class="logo-link"></router-link>
                 </div>
             </div>
 

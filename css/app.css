@@ -6608,6 +6608,9 @@ html, body {
   padding: 0;
   height: 100%; }
 
+.primary-container {
+  height: 100%; }
+
 .logo-link {
   margin-left: 20px;
   margin-top: 20px;
@@ -6641,7 +6644,6 @@ html, body {
   flex-wrap: wrap; }
   @media screen and (max-width: 767px) {
     .home-page {
-      height: auto;
       flex-direction: column; }
       .home-page .bio-bottom {
         font-size: .8em; } }
@@ -6673,9 +6675,11 @@ html, body {
     margin: 0;
     height: auto; }
   .home-page .top-right {
-    background: #21305d; }
+    background: #21305d;
+    height: auto; }
   .home-page .bottom-right {
-    background: #e58283; }
+    background: #e58283;
+    height: auto; }
   .home-page .bio {
     margin: 15%; }
     @media screen and (max-width: 767px) {
@@ -6695,7 +6699,7 @@ html, body {
 
 .resume {
   background: #e58283;
-  height: 100%; }
+  height: auto; }
 
 .portfolio {
   background: #21305d; }
