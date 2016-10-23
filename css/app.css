@@ -6651,12 +6651,13 @@ html, body {
   .home-page .main {
     background: #a7cfe6;
     flex: 2;
-    height: 100%;
     margin: auto;
     padding: auto; }
+    @media screen and (min-width: 767px) {
+      .home-page .main {
+        height: 100%; } }
     @media screen and (max-width: 767px) {
       .home-page .main {
-        height: auto;
         margin: 0; } }
   .home-page .side {
     display: flex;

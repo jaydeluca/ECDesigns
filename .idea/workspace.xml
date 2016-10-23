@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22e72ce-7467-42ba-bb92-bd555ca22452" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_globals.scssc" afterPath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_globals.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_home-page.scssc" afterPath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_home-page.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_resume.scssc" afterPath="$PROJECT_DIR$/.sass-cache/aec0d08ac1ae4dab6df7bfe203cab79da2252f88/_resume.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css.map" afterPath="$PROJECT_DIR$/css/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_home-page.scss" afterPath="$PROJECT_DIR$/css/sass/_home-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_resume.scss" afterPath="$PROJECT_DIR$/css/sass/_resume.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Resume.vue" afterPath="$PROJECT_DIR$/src/components/Resume.vue" />
     </list>
     <ignored path="ECDesigns.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,21 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_home-page.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_home-page.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/sass/_home-page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="616">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -179,10 +170,10 @@
         <option value="$PROJECT_DIR$/src/components/Portfolio.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/components/Resume.vue" />
-        <option value="$PROJECT_DIR$/css/sass/_home-page.scss" />
         <option value="$PROJECT_DIR$/css/sass/_globals.scss" />
         <option value="$PROJECT_DIR$/css/sass/_resume.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/sass/_home-page.scss" />
       </list>
     </option>
   </component>
@@ -445,12 +436,12 @@
       <workItem from="1476833325177" duration="1137000" />
       <workItem from="1476890166141" duration="3237000" />
       <workItem from="1477154330341" duration="102000" />
-      <workItem from="1477154678623" duration="12370000" />
+      <workItem from="1477154678623" duration="12586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27481000" />
+    <option name="totallyTimeSpent" value="27697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="2304" height="1273" extended-state="6" />
@@ -2337,14 +2328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sass/_home-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sass/_globals.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -2372,7 +2355,15 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sass/_home-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding />
         </state>
       </provider>
