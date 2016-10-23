@@ -38,36 +38,3 @@
     </transition>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
-                print: true,
-                web: false,
-                ads: false,
-                branding: false
-            }
-        },
-        methods: {
-            showWeb() {
-                this.switchVisible('web');
-            },
-            showPrint() {
-                this.switchVisible('print');
-            },
-            showBranding() {
-                this.switchVisible('branding');
-            },
-            showAds() {
-                this.switchVisible('ads');
-            },
-            switchVisible(label) {
-                this.ads = label === "ads";
-                this.print = label === "print";
-                this.branding = label === "branding";
-                this.web = label === "web";
-            }
-        }
-    }
-</script>
-

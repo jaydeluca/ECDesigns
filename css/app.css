@@ -6691,7 +6691,8 @@ html, body {
         margin: 5%; } }
 
 .resume {
-  background: #e58283; }
+  background: #e58283;
+  height: 100%; }
 
 .portfolio {
   background: #21305d; }
