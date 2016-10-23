@@ -6652,6 +6652,7 @@ html, body {
     padding: auto; }
     @media screen and (max-width: 767px) {
       .home-page .main {
+        height: auto;
         margin: 0; } }
   .home-page .side {
     display: flex;
