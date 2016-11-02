@@ -5,7 +5,7 @@
         </div>
 
         <div class="resume-content">
-            <img src="/img/res_site2.png" class="img-responsive" style="margin-left: auto; margin-right: auto; padding-left: 15%; padding-right: 15%;">
+            <img src="/img/res_site-nov16.png" class="img-responsive" style="margin-left: auto; margin-right: auto; padding-left: 15%; padding-right: 15%;">
         </div>
     </div>
 </template>
