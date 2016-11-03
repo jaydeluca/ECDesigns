@@ -3,7 +3,7 @@ import Vue from 'vue'
 import Home from './components/Home.vue'
 import Resume from './components/Resume.vue'
 import Portfolio from './components/Portfolio.vue'
-import PortfolioWeb from './components/PortfolioWeb.vue'
+import PortfolioUIUX from './components/PortfolioUIUX.vue'
 import PortfolioAds from './components/PortfolioAds.vue'
 import PortfolioPrint from './components/PortfolioPrint.vue'
 import PortfolioBranding from './components/PortfolioBranding.vue'
@@ -22,8 +22,8 @@ const routes = [
           redirect: '/portfolio/print'
         },
         {
-          path: 'web',
-          component: PortfolioWeb
+          path: 'uiux',
+          component: PortfolioUIUX
         },
         {
           path: 'ads',

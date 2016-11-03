@@ -20,7 +20,7 @@
                                 <router-link to="/portfolio/print" active-class="makeBold">PRINT</router-link> &nbsp;&nbsp;|&nbsp;&nbsp;
                                 <router-link to="/portfolio/branding" active-class="makeBold">BRANDING</router-link> &nbsp;&nbsp;|&nbsp;&nbsp;
                                 <router-link to="/portfolio/ads" active-class="makeBold">ADVERTISING</router-link> &nbsp;&nbsp;|&nbsp;&nbsp;
-                                <router-link to="/portfolio/web" active-class="makeBold">WEB</router-link>
+                                <router-link to="/portfolio/uiux" active-class="makeBold">UI/UX</router-link>
                             </p>
                         </div>
                     </div>
