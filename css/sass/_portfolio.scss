@@ -1,10 +1,10 @@
+$background: #21305d;
 
 .portfolio {
-  background: #21305d;
-
+  background: $background;
 
   .portfolio-container {
-    margin-top: 30px;
+    margin-top: 150px;
     position: relative;
     padding-left: 0;
     padding-right: 0;
@@ -15,17 +15,42 @@
     margin-left: auto;
     margin-right: auto;
   }
-  a:hover, a:visited, a:link, a:active
-  {
-    color: white;
-    text-decoration: none;
-  }
   .portfolio-item {
     margin-bottom: 30px;
     text-align: center;
   }
-  .makebold {
-    font-weight: bold;
+
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .link {
+    text-align: center;
+    @extend .normal-font;
+    flex-grow: 1;
+    a:hover, a:visited, a:link, a:active
+    {
+      color: white;
+      text-decoration: none;
+    }
+    .makebold {
+      font-weight: bold;
+    }
   }
 
 }
+
+.nav-sticky {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba($background, .6);
+}
+

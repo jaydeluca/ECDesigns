@@ -6622,7 +6622,7 @@ html, body {
   color: white;
   letter-spacing: 4px; }
 
-.normal-font {
+.normal-font, .nav-links .link {
   font-size: 1.2em;
   color: white; }
 
@@ -6709,7 +6709,7 @@ html, body {
 .portfolio {
   background: #21305d; }
   .portfolio .portfolio-container {
-    margin-top: 30px;
+    margin-top: 150px;
     position: relative;
     padding-left: 0;
     padding-right: 0;
@@ -6719,13 +6719,32 @@ html, body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto; }
-  .portfolio a:hover, .portfolio a:visited, .portfolio a:link, .portfolio a:active {
-    color: white;
-    text-decoration: none; }
   .portfolio .portfolio-item {
     margin-bottom: 30px;
     text-align: center; }
-  .portfolio .makebold {
-    font-weight: bold; }
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .nav-links .link {
+    text-align: center;
+    flex-grow: 1; }
+    .nav-links .link a:hover, .nav-links .link a:visited, .nav-links .link a:link, .nav-links .link a:active {
+      color: white;
+      text-decoration: none; }
+    .nav-links .link .makebold {
+      font-weight: bold; }
+
+.nav-sticky {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(33, 48, 93, 0.6); }
 
 /*# sourceMappingURL=app.css.map */

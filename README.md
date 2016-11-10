@@ -4,5 +4,8 @@ A Vue.js SPA portfolio site
 Install dependencies
 > yarn
 
-Compile js and sass
+Compile js
 > npm run build
+
+Compile sass
+> sass --watch css/sass:css
